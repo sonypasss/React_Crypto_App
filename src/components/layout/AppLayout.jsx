@@ -12,7 +12,6 @@ export default function AppLayout() {
     if(loading) {
         return <Spin fullscreen />
     }
-
     
     return (
     <Layout>
