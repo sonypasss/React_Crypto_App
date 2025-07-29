@@ -23,6 +23,7 @@ export function CryptoContextProvider({ children }) {
                 growPercent: percentDiffrence(asset.price, coin.price),
                 totalAmount: asset.amount * coin.price, // количество криптовалюты умножаем на текущую стоимость
                 totalProfit: asset.amount * coin.price - asset.amount * asset.price, // сколько заработали: сколько заработали и вычитаем то кол-во денег, за которое покупали крипту 
+                name: coin.name,
                 ...asset,
             }
         })
